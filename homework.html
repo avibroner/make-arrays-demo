@@ -62,9 +62,14 @@
     <li>צרו תרחיש חדש והוסיפו את המודול <b>HTTP &gt; Make a request</b>.</li>
     <li>בשדה URL הדביקו את הכתובת:
       <span class="url">https://avibroner.github.io/make-arrays-demo/tasks.json</span></li>
-    <li>Method: <code>GET</code>. סמנו <b>Parse response = Yes</b>. אין צורך בהרשאה או ב-headers.</li>
+    <li>Authentication type: <code>No authentication</code>. Method: <code>GET</code>. סמנו <b>Parse response = Yes</b>. אין צורך ב-headers.</li>
     <li>לחצו <b>Run once</b> ופתחו את הבועה של המודול.</li>
   </ol>
+  <figure style="margin:14px 0; text-align:center">
+    <img src="http-module-settings.png" alt="הגדרות מודול ה-HTTP: ללא הרשאה, הכתובת של הקובץ ו-Method GET"
+         style="max-width:100%; width:380px; border:1px solid var(--line); border-radius:10px">
+    <figcaption style="color:var(--muted); font-size:14px; margin-top:6px">כך נראות ההגדרות של המודול</figcaption>
+  </figure>
   <p>בפלט תמצאו את <code>Data</code>, ובתוכו את המערך <code>tasks</code>. כל פריט במערך הוא קולקשן שנראה כך:</p>
 <pre>{
   "id": 1,
