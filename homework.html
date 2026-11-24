@@ -30,7 +30,6 @@
   .check { background: var(--ok-bg); color: var(--ok); }
   code, pre { font-family: Consolas, "Courier New", monospace; direction: ltr; unicode-bidi: embed; }
   code { background: #eef0f5; border-radius: 5px; padding: 1px 6px; font-size: 14px; }
-  .hint code { background: #dde5ff; }
   pre { background: #1c2434; color: #e8ecf6; border-radius: 10px; padding: 14px 16px; overflow: auto;
         text-align: left; font-size: 13.5px; line-height: 1.55; margin: 10px 0; }
   .url { display: block; background: var(--soft); border: 1px dashed #b9c6ff; border-radius: 10px; padding: 10px 14px;
@@ -87,13 +86,12 @@
 <div class="card">
   <h3><span class="num">1</span> כמה משימות יש?</h3>
   <p>החזירו את מספר הפריטים במערך <code>tasks</code>.</p>
-  <span class="hint">רמז: <code>length</code></span><span class="check">תוצאה: 50</span>
+  <span class="check">תוצאה: 50</span>
 </div>
 
 <div class="card">
   <h3><span class="num">2</span> הראשונה והאחרונה</h3>
   <p>החזירו את הנושא (<code>subject</code>) של המשימה הראשונה במערך, ובמשתנה נוסף את הנושא של האחרונה.</p>
-  <span class="hint">רמז: <code>first</code>, <code>last</code></span>
   <span class="check">ראשונה: לתאם שיחת הדגמה</span>
   <span class="check">אחרונה: לבדוק נתוני שימוש של הלקוח</span>
 </div>
@@ -101,14 +99,12 @@
 <div class="card">
   <h3><span class="num">3</span> המשימה העשירית</h3>
   <p>החזירו את הנושא של הפריט העשירי במערך, בלי להשתמש ב-Iterator.</p>
-  <span class="hint">רמז: <code>get</code> עם מספר הפריט ושם השדה</span>
   <span class="check">תוצאה: לעדכן את צוות המכירות על שינוי במחירון</span>
 </div>
 
 <div class="card">
   <h3><span class="num">4</span> רשימת כל הנושאים</h3>
   <p>צרו מערך חדש שמכיל רק את הנושאים של כל המשימות. אחר כך הפכו אותו לטקסט אחד, שבו הנושאים מופרדים בפסיק ורווח.</p>
-  <span class="hint">רמז: <code>map</code> ואחריו <code>join</code></span>
   <span class="check">הטקסט מתחיל ב: לתאם שיחת הדגמה, לשלוח הצעת מחיר לשירות נוסף, לתאם פגישת סיכום שנה</span>
 </div>
 
@@ -117,20 +113,18 @@
 <div class="card">
   <h3><span class="num">5</span> שדה בתוך קולקשן מקונן</h3>
   <p>מהי העדיפות (<code>priority</code>) של המשימה השלישית במערך? זכרו שהעדיפות נמצאת בתוך <code>details</code>.</p>
-  <span class="hint">רמז: <code>get</code> עם נתיב שמופרד בנקודות</span><span class="check">תוצאה: רגילה</span>
+  <span class="check">תוצאה: רגילה</span>
 </div>
 
 <div class="card">
   <h3><span class="num">6</span> רק הצעות מחיר</h3>
   <p>החזירו מערך של הנושאים של המשימות שהסוג שלהן (<code>details.type</code>) הוא "הצעת מחיר".</p>
-  <span class="hint">רמז: <code>map</code> עם שני הפרמטרים האחרונים, שדה לסינון וערך לסינון</span>
   <span class="check">4 נושאים: לשלוח הצעת מחיר לשירות נוסף, להכין הצעה למכרז, לשלוח הצעת מחיר מעודכנת, לחדש הסכם שירות</span>
 </div>
 
 <div class="card">
   <h3><span class="num">7</span> כמה משימות פתוחות?</h3>
   <p>חשבו בנוסחה אחת כמה משימות נמצאות בסטטוס "פתוח".</p>
-  <span class="hint">רמז: פונקציה בתוך פונקציה, <code>length</code> על התוצאה של <code>map</code></span>
   <span class="check">תוצאה: 35</span>
 </div>
 
@@ -153,7 +147,6 @@
 <div class="card">
   <h3><span class="num">9</span> שלוש המשימות הרחוקות ביותר</h3>
   <p>מיינו את המערך לפי <code>due_date</code> מהמאוחר למוקדם, קחו רק את שלושת הפריטים הראשונים, והחזירו את הנושאים שלהם כטקסט אחד שבו כל נושא בשורה נפרדת.</p>
-  <span class="hint">רמז: <code>sort</code>, <code>slice</code>, <code>map</code>, <code>join</code> עם <code>newline</code></span>
   <span class="check">שתי השורות הראשונות (הסדר ביניהן יכול להתחלף, כי התאריך שלהן זהה): לבדוק נתוני שימוש של הלקוח, לתאם פגישת צוות שבועית</span>
 </div>
 
